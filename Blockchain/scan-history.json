@@ -1,0 +1,312 @@
+[
+  {
+    "id": "SC-f2b395e8-4ccc-41d1-8f75-d8cc3f18eeb0",
+    "site": "verid.dev",
+    "website": "https://verid.dev/playground?utm_source=chatgpt.com",
+    "time": "2026-10-10T01:06:53.002Z",
+    "result": "Secure",
+    "changes": "No changes",
+    "duration": "4.4s",
+    "hash": "3ed289239380960dd2d2949e295f0fb652844f534f71cb9ec3c8bf5d6c50533d"
+  },
+  {
+    "id": "SC-318c2c55-d5b6-4441-b858-b86e6db8b240",
+    "site": "verid.dev",
+    "website": "https://verid.dev/playground",
+    "time": "2026-10-10T01:06:53.002Z",
+    "result": "Secure",
+    "changes": "No changes",
+    "duration": "4.4s",
+    "hash": "3ed289239380960dd2d2949e295f0fb652844f534f71cb9ec3c8bf5d6c50533d"
+  },
+  {
+    "id": "SC-86e87183-fde1-4497-9055-bba015020944",
+    "site": "verid.dev",
+    "website": "https://verid.dev/",
+    "time": "2026-10-10T01:06:53.002Z",
+    "result": "Secure",
+    "changes": "No changes",
+    "duration": "4.4s",
+    "hash": "e7bc6b04e85c28bb92d5f8887259c6ce54a8bd425d5be323bb192a16c5471509"
+  },
+  {
+    "id": "SC-856bc615-9bfd-4039-aa53-220d16efed0c",
+    "site": "verid.dev",
+    "website": "https://verid.dev/features",
+    "time": "2026-10-10T01:06:53.002Z",
+    "result": "Secure",
+    "changes": "No changes",
+    "duration": "4.4s",
+    "hash": "c519fdd063a53b985cdac37d73200f378caff06c7dcc85275245ce7447a6f58b"
+  },
+  {
+    "id": "SC-c5d273c4-52d1-4a2b-9fff-79db597230dc",
+    "site": "verid.dev",
+    "website": "https://verid.dev/pricing",
+    "time": "2026-10-10T01:06:53.002Z",
+    "result": "Secure",
+    "changes": "No changes",
+    "duration": "4.4s",
+    "hash": "84e917b7d7c647c581fad502361a6e78f594c3286d49315a2414e671c66d9323"
+  },
+  {
+    "id": "SC-0fe5d964-84fc-4008-aa76-d7dcd74cc071",
+    "site": "verid.dev",
+    "website": "https://verid.dev/features/visual-monitoring",
+    "time": "2026-10-10T01:06:53.002Z",
+    "result": "Secure",
+    "changes": "No changes",
+    "duration": "4.4s",
+    "hash": "b9a8134abe575cc971265e545afecca0554945eafe9219fd5215c8b7c7aec01d"
+  },
+  {
+    "id": "SC-21571875-c389-481a-be0c-fd07b6e5ad12",
+    "site": "verid.dev",
+    "website": "https://verid.dev/products/change-detection-api",
+    "time": "2026-10-10T01:06:53.002Z",
+    "result": "Secure",
+    "changes": "No changes",
+    "duration": "4.4s",
+    "hash": "5c7a5bbc2b62f8d28b8e986148ec678694896720d6e6112aa857483a08d9be7f"
+  },
+  {
+    "id": "SC-286772d2-02bd-4eb2-95db-4bd6aec4fe35",
+    "site": "verid.dev",
+    "website": "https://verid.dev/playground?utm_source=chatgpt.com",
+    "time": "2026-10-10T01:09:37.462Z",
+    "result": "Secure",
+    "changes": "No changes",
+    "duration": "3.8s",
+    "hash": "3ed289239380960dd2d2949e295f0fb652844f534f71cb9ec3c8bf5d6c50533d"
+  },
+  {
+    "id": "SC-1f19933a-3780-440a-960d-c159642952f7",
+    "site": "verid.dev",
+    "website": "https://verid.dev/playground",
+    "time": "2026-10-10T01:09:37.462Z",
+    "result": "Secure",
+    "changes": "No changes",
+    "duration": "3.8s",
+    "hash": "3ed289239380960dd2d2949e295f0fb652844f534f71cb9ec3c8bf5d6c50533d"
+  },
+  {
+    "id": "SC-9898db1a-ed56-45fe-b17a-090d9d303553",
+    "site": "verid.dev",
+    "website": "https://verid.dev/",
+    "time": "2026-10-10T01:09:37.462Z",
+    "result": "Secure",
+    "changes": "No changes",
+    "duration": "3.8s",
+    "hash": "e7bc6b04e85c28bb92d5f8887259c6ce54a8bd425d5be323bb192a16c5471509"
+  },
+  {
+    "id": "SC-4d4ea958-c758-4442-b974-6538cfbdb6b3",
+    "site": "verid.dev",
+    "website": "https://verid.dev/features",
+    "time": "2026-10-10T01:09:37.462Z",
+    "result": "Secure",
+    "changes": "No changes",
+    "duration": "3.8s",
+    "hash": "c519fdd063a53b985cdac37d73200f378caff06c7dcc85275245ce7447a6f58b"
+  },
+  {
+    "id": "SC-1bbf49ba-e260-4170-91c6-c3cd874d5469",
+    "site": "verid.dev",
+    "website": "https://verid.dev/pricing",
+    "time": "2026-10-10T01:09:37.462Z",
+    "result": "Secure",
+    "changes": "No changes",
+    "duration": "3.8s",
+    "hash": "84e917b7d7c647c581fad502361a6e78f594c3286d49315a2414e671c66d9323"
+  },
+  {
+    "id": "SC-49159f70-b515-498a-b0b3-d0d9cdd85910",
+    "site": "verid.dev",
+    "website": "https://verid.dev/features/visual-monitoring",
+    "time": "2026-10-10T01:09:37.462Z",
+    "result": "Secure",
+    "changes": "No changes",
+    "duration": "3.8s",
+    "hash": "b9a8134abe575cc971265e545afecca0554945eafe9219fd5215c8b7c7aec01d"
+  },
+  {
+    "id": "SC-fb25e5d0-6363-4611-8976-493525f6603e",
+    "site": "verid.dev",
+    "website": "https://verid.dev/products/change-detection-api",
+    "time": "2026-10-10T01:09:37.462Z",
+    "result": "Secure",
+    "changes": "No changes",
+    "duration": "3.8s",
+    "hash": "5c7a5bbc2b62f8d28b8e986148ec678694896720d6e6112aa857483a08d9be7f"
+  },
+  {
+    "id": "SC-87362424-f791-45d4-a3d4-3bb0002443a7",
+    "site": "developer.mozilla.org",
+    "website": "https://developer.mozilla.org/en-US/observatory",
+    "time": "2026-10-10T01:09:38.571Z",
+    "result": "Secure",
+    "changes": "No changes",
+    "duration": "1.1s",
+    "hash": "2e88c2b58a2805e00d47672ac22b4984eda1b70c564906bda9098ac734340dd5"
+  },
+  {
+    "id": "SC-3c972a2a-5063-4277-976f-c894528a2e38",
+    "site": "developer.mozilla.org",
+    "website": "https://developer.mozilla.org/en-US/",
+    "time": "2026-10-10T01:09:38.571Z",
+    "result": "Secure",
+    "changes": "No changes",
+    "duration": "1.1s",
+    "hash": "2d4d556c8c5474e3ab4695af9e2a1191b082a1390dca6a838a10d40832d42975"
+  },
+  {
+    "id": "SC-0ef0ddcf-e80a-4375-ba26-63d29ccfcb88",
+    "site": "developer.mozilla.org",
+    "website": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+    "time": "2026-10-10T01:09:38.571Z",
+    "result": "Secure",
+    "changes": "No changes",
+    "duration": "1.1s",
+    "hash": "8f91d8db9eafbb508281af07205e67e4d9ae4a6577163b1d340e66714f36d4e1"
+  },
+  {
+    "id": "SC-377fe1e0-9140-4553-b125-63b1151572eb",
+    "site": "developer.mozilla.org",
+    "website": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements",
+    "time": "2026-10-10T01:09:38.571Z",
+    "result": "Secure",
+    "changes": "No changes",
+    "duration": "1.1s",
+    "hash": "a99c03fa6b790c68d9f26391b4ab040f02007a0b1f9ed91cbb660d9fe6d109ab"
+  },
+  {
+    "id": "SC-e74dbe03-2e8c-4408-9980-3b4570248fd5",
+    "site": "developer.mozilla.org",
+    "website": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes",
+    "time": "2026-10-10T01:09:38.571Z",
+    "result": "Secure",
+    "changes": "No changes",
+    "duration": "1.1s",
+    "hash": "f72b31bf974ef961d181790be8cd7b41b1034b9d4169799e55c55b2bd1fc3944"
+  },
+  {
+    "id": "SC-f16cc799-42bd-41e9-897d-523950c7f622",
+    "site": "example.com",
+    "website": "https://example.com/",
+    "time": "2026-10-10T02:10:27.396Z",
+    "result": "Secure",
+    "changes": "No changes",
+    "duration": "0.1s",
+    "hash": "25ddf2c883e0d1958ea971d279a7e4f0fd446724ee3db7db19dadabd4a62e484"
+  },
+  {
+    "id": "SC-7844724c-d636-4532-b8c4-484abd0ea470",
+    "site": "example.com",
+    "website": "https://example.com/",
+    "time": "2026-10-10T02:11:21.630Z",
+    "result": "Secure",
+    "changes": "No changes",
+    "duration": "0.2s",
+    "hash": "25ddf2c883e0d1958ea971d279a7e4f0fd446724ee3db7db19dadabd4a62e484"
+  },
+  {
+    "id": "SC-263d87b7-ccc0-4df4-a9d3-f750e75e5c41",
+    "site": "sstc.ac.in",
+    "website": "https://sstc.ac.in/",
+    "time": "2026-10-10T02:31:07.045Z",
+    "result": "Secure",
+    "changes": "No changes",
+    "duration": "5.4s",
+    "hash": "a6d949a0cb74cb554f2235db8f369dc5e1ea2bca324cf64b53c56d07566577ec"
+  },
+  {
+    "id": "SC-27fe72a1-e90d-48ac-8d16-57ccf4deec18",
+    "site": "sstc.ac.in",
+    "website": "https://sstc.ac.in/apple-touch-icon.html",
+    "time": "2026-10-10T02:31:07.045Z",
+    "result": "Secure",
+    "changes": "No changes",
+    "duration": "5.4s",
+    "hash": "35e3c1826970414c1c20a78974339bc7726843c464c41c2d2c45ecd46b6e34ec"
+  },
+  {
+    "id": "SC-c156d6c9-e9b6-44ba-be57-0118be635b7b",
+    "site": "sstc.ac.in",
+    "website": "https://sstc.ac.in/homepage",
+    "time": "2026-10-10T02:31:07.045Z",
+    "result": "Secure",
+    "changes": "No changes",
+    "duration": "5.4s",
+    "hash": "a6d949a0cb74cb554f2235db8f369dc5e1ea2bca324cf64b53c56d07566577ec"
+  },
+  {
+    "id": "SC-35c5c685-af2d-4871-876a-def2465d9ccd",
+    "site": "sstc.ac.in",
+    "website": "https://sstc.ac.in/NBA",
+    "time": "2026-10-10T02:31:07.045Z",
+    "result": "Secure",
+    "changes": "No changes",
+    "duration": "5.4s",
+    "hash": "f3044d0dbb77792507427fa709795c4004d8b34f9e6001cd2a0749e65b5df66e"
+  },
+  {
+    "id": "SC-9799f2b6-3b38-40cf-a7eb-6cedc3a3a9a9",
+    "site": "sstc.ac.in",
+    "website": "https://sstc.ac.in/NAAC",
+    "time": "2026-10-10T02:31:07.045Z",
+    "result": "Secure",
+    "changes": "No changes",
+    "duration": "5.4s",
+    "hash": "1fec4fbe40702a23468ac0f4d77efe923c41e03f3d2ede1cbd2768a5e03280f9"
+  },
+  {
+    "id": "SC-fa86bbec-e15c-454c-9965-6e47917729f8",
+    "site": "sstc.ac.in",
+    "website": "https://sstc.ac.in/NIRF",
+    "time": "2026-10-10T02:31:07.045Z",
+    "result": "Secure",
+    "changes": "No changes",
+    "duration": "5.4s",
+    "hash": "08de061e5fb198abeb1b993f21602245010a74c9c4a4dd830fa0f85b55d000c4"
+  },
+  {
+    "id": "SC-812a3d36-edb0-43a7-b7f2-d2e73d64cb23",
+    "site": "sstc.ac.in",
+    "website": "https://sstc.ac.in/ARIIA-2021",
+    "time": "2026-10-10T02:31:07.045Z",
+    "result": "Secure",
+    "changes": "No changes",
+    "duration": "5.4s",
+    "hash": "efdd464c4930511af777659ffef773499d9796c2b58dca9669a016c51374fa34"
+  },
+  {
+    "id": "SC-49b1b7d7-216f-47d6-ac62-b678b1772b72",
+    "site": "sstc.ac.in",
+    "website": "https://sstc.ac.in/ISO-Certificate",
+    "time": "2026-10-10T02:31:07.045Z",
+    "result": "Secure",
+    "changes": "No changes",
+    "duration": "5.4s",
+    "hash": "b2be578dcff7582fb1f934ff10c18b5040ec422aa2b526bd8512b034d3db90ea"
+  },
+  {
+    "id": "SC-c4c73559-a491-4ad7-a0ee-d8c5fbae33b9",
+    "site": "sstc.ac.in",
+    "website": "https://sstc.ac.in/green-Certificate",
+    "time": "2026-10-10T02:31:07.045Z",
+    "result": "Secure",
+    "changes": "No changes",
+    "duration": "5.4s",
+    "hash": "fdeb3c83eae87a65777d94a12c3564b851a32a2a40aa52b8becf81e28972b178"
+  },
+  {
+    "id": "SC-7140a583-7bd2-4315-b925-a79ba4b46da8",
+    "site": "sstc.ac.in",
+    "website": "https://sstc.ac.in/iic-Certificate",
+    "time": "2026-10-10T02:31:07.045Z",
+    "result": "Secure",
+    "changes": "No changes",
+    "duration": "5.4s",
+    "hash": "af070d7b41820744f7446d032e99c2f70669a01495dc5b2db34614c841ffcb77"
+  }
+]

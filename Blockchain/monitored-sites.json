@@ -1,0 +1,178 @@
+[
+  {
+    "id": "CM-MV1S2C6D",
+    "domain": "sstc.ac.in",
+    "url": "https://sstc.ac.in/",
+    "scanned": "2026-10-10T02:31:07.045Z",
+    "status": "Secure",
+    "changes": 0,
+    "risk": "Low",
+    "riskScore": 30,
+    "riskCategory": "Low",
+    "indicators": [
+      {
+        "id": "SEC-HDR-HSTS",
+        "title": "Missing HSTS Header",
+        "severity": "Low",
+        "type": "Defensive Hardening Advisory",
+        "description": "Strict-Transport-Security header is not present. Browsers will not strictly enforce HTTPS, allowing potential SSL-stripping man-in-the-middle attacks.",
+        "remediation": "Add 'Strict-Transport-Security: max-age=31536000; includeSubDomains; preload' to server responses."
+      },
+      {
+        "id": "SEC-HDR-CSP",
+        "title": "Missing Content-Security-Policy (CSP)",
+        "severity": "Low",
+        "type": "Defensive Hardening Advisory",
+        "description": "Content-Security-Policy header is missing. CSP prevents Cross-Site Scripting (XSS) and data injection by specifying permitted sources for scripts and styles.",
+        "remediation": "Implement a robust Content-Security-Policy header defining trusted sources for scripts, styles, and frames."
+      },
+      {
+        "id": "SEC-HDR-XFO",
+        "title": "Missing Clickjacking Protection",
+        "severity": "Low",
+        "type": "Defensive Hardening Advisory",
+        "description": "Neither X-Frame-Options nor CSP frame-ancestors is configured. The page can be embedded in an iframe on third-party sites, exposing users to clickjacking.",
+        "remediation": "Add 'X-Frame-Options: DENY' or 'X-Frame-Options: SAMEORIGIN', or use CSP 'frame-ancestors 'self''.' to prevent unauthorized framing."
+      },
+      {
+        "id": "SEC-HDR-XCTO",
+        "title": "Missing X-Content-Type-Options: nosniff",
+        "severity": "Low",
+        "type": "Defensive Hardening Advisory",
+        "description": "X-Content-Type-Options is missing or not set to 'nosniff'. Browsers may attempt to MIME-sniff response content, potentially executing untrusted scripts.",
+        "remediation": "Add 'X-Content-Type-Options: nosniff' header to all HTTP responses."
+      },
+      {
+        "id": "SEC-HDR-REF",
+        "title": "Missing Referrer-Policy",
+        "severity": "Low",
+        "type": "Defensive Hardening Advisory",
+        "description": "Referrer-Policy header is not set. Browsers may leak full URLs and sensitive path/query parameters in Referer headers when navigating to external origins.",
+        "remediation": "Set 'Referrer-Policy: strict-origin-when-cross-origin' or 'no-referrer'."
+      },
+      {
+        "id": "INFO-DISC-SERVER",
+        "title": "Server Version Disclosed",
+        "severity": "Low",
+        "type": "Defensive Hardening Advisory",
+        "description": "Server header exposes specific version details: \"nginx/1.29.8\". Version disclosure simplifies targeted exploit research for attackers.",
+        "remediation": "Suppress or generalize the Server header in web server configuration (e.g. 'Server: webserver')."
+      }
+    ],
+    "securityHeaders": {
+      "strictTransportSecurity": null,
+      "contentSecurityPolicy": null,
+      "xFrameOptions": null,
+      "xContentTypeOptions": null,
+      "referrerPolicy": null,
+      "serverBanner": "nginx/1.29.8",
+      "xPoweredByBanner": null
+    },
+    "redirectTrail": [],
+    "page": "/",
+    "hash": "a6d949a0cb74cb554f2235db8f369dc5e1ea2bca324cf64b53c56d07566577ec",
+    "previousHash": "No previous baseline",
+    "pagesScanned": 10,
+    "blockchainValid": true,
+    "scanErrors": []
+  },
+  {
+    "id": "CM-MV1RBRNN",
+    "domain": "example.com",
+    "url": "https://example.com/",
+    "scanned": "2026-10-10T02:11:21.629Z",
+    "status": "Secure",
+    "changes": 0,
+    "risk": "Low",
+    "riskScore": 25,
+    "riskCategory": "Low",
+    "indicators": [
+      {
+        "id": "SEC-HDR-HSTS",
+        "title": "Missing HSTS Header",
+        "severity": "Low",
+        "type": "Defensive Hardening Advisory",
+        "description": "Strict-Transport-Security header is not present. Browsers will not strictly enforce HTTPS, allowing potential SSL-stripping man-in-the-middle attacks.",
+        "remediation": "Add 'Strict-Transport-Security: max-age=31536000; includeSubDomains; preload' to server responses."
+      },
+      {
+        "id": "SEC-HDR-CSP",
+        "title": "Missing Content-Security-Policy (CSP)",
+        "severity": "Low",
+        "type": "Defensive Hardening Advisory",
+        "description": "Content-Security-Policy header is missing. CSP prevents Cross-Site Scripting (XSS) and data injection by specifying permitted sources for scripts and styles.",
+        "remediation": "Implement a robust Content-Security-Policy header defining trusted sources for scripts, styles, and frames."
+      },
+      {
+        "id": "SEC-HDR-XFO",
+        "title": "Missing Clickjacking Protection",
+        "severity": "Low",
+        "type": "Defensive Hardening Advisory",
+        "description": "Neither X-Frame-Options nor CSP frame-ancestors is configured. The page can be embedded in an iframe on third-party sites, exposing users to clickjacking.",
+        "remediation": "Add 'X-Frame-Options: DENY' or 'X-Frame-Options: SAMEORIGIN', or use CSP 'frame-ancestors 'self''.' to prevent unauthorized framing."
+      },
+      {
+        "id": "SEC-HDR-XCTO",
+        "title": "Missing X-Content-Type-Options: nosniff",
+        "severity": "Low",
+        "type": "Defensive Hardening Advisory",
+        "description": "X-Content-Type-Options is missing or not set to 'nosniff'. Browsers may attempt to MIME-sniff response content, potentially executing untrusted scripts.",
+        "remediation": "Add 'X-Content-Type-Options: nosniff' header to all HTTP responses."
+      },
+      {
+        "id": "SEC-HDR-REF",
+        "title": "Missing Referrer-Policy",
+        "severity": "Low",
+        "type": "Defensive Hardening Advisory",
+        "description": "Referrer-Policy header is not set. Browsers may leak full URLs and sensitive path/query parameters in Referer headers when navigating to external origins.",
+        "remediation": "Set 'Referrer-Policy: strict-origin-when-cross-origin' or 'no-referrer'."
+      }
+    ],
+    "securityHeaders": {
+      "strictTransportSecurity": null,
+      "contentSecurityPolicy": null,
+      "xFrameOptions": null,
+      "xContentTypeOptions": null,
+      "referrerPolicy": null,
+      "serverBanner": "cloudflare",
+      "xPoweredByBanner": null
+    },
+    "redirectTrail": [],
+    "page": "/",
+    "hash": "25ddf2c883e0d1958ea971d279a7e4f0fd446724ee3db7db19dadabd4a62e484",
+    "previousHash": "25ddf2c883e0d1958ea971d279a7e4f0fd446724ee3db7db19dadabd4a62e484",
+    "pagesScanned": 1,
+    "blockchainValid": true,
+    "scanErrors": []
+  },
+  {
+    "id": "CM-MV1JFEYB",
+    "domain": "developer.mozilla.org",
+    "url": "https://developer.mozilla.org/en-US/observatory",
+    "scanned": "2026-10-10T01:09:38.571Z",
+    "status": "Secure",
+    "changes": 0,
+    "risk": "None",
+    "page": "/en-US/observatory",
+    "hash": "2e88c2b58a2805e00d47672ac22b4984eda1b70c564906bda9098ac734340dd5",
+    "previousHash": "2e88c2b58a2805e00d47672ac22b4984eda1b70c564906bda9098ac734340dd5",
+    "pagesScanned": 5,
+    "blockchainValid": true,
+    "scanErrors": []
+  },
+  {
+    "id": "CM-MV1P20G9",
+    "domain": "verid.dev",
+    "url": "https://verid.dev/playground?utm_source=chatgpt.com",
+    "scanned": "2026-10-10T01:09:37.462Z",
+    "status": "Secure",
+    "changes": 0,
+    "risk": "None",
+    "page": "/playground",
+    "hash": "3ed289239380960dd2d2949e295f0fb652844f534f71cb9ec3c8bf5d6c50533d",
+    "previousHash": "3ed289239380960dd2d2949e295f0fb652844f534f71cb9ec3c8bf5d6c50533d",
+    "pagesScanned": 7,
+    "blockchainValid": true,
+    "scanErrors": []
+  }
+]

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberMesh Website Scanner</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 40px 20px;
+            font-family: Arial, sans-serif;
+            background: #07111f;
+            color: #f1f5f9;
+        }
+        main {
+            max-width: 750px;
+            margin: 40px auto;
+        }
+        h1 { text-align: center; }
+        h1 span { color: #20e0d0; }
+        .panel {
+            background: #12233f;
+            padding: 24px;
+            border-radius: 14px;
+        }
+        input, button {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 14px;
+            margin-top: 12px;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+        input {
+            background: #101820;
+            color: white;
+            border: 1px solid #9aa6b2;
+        }
+        button {
+            background: #20e0d0;
+            color: #061522;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        button:disabled { opacity: 0.6; }
+        .result-card {
+            background: #192d49;
+            padding: 14px;
+            margin-top: 12px;
+            border-radius: 8px;
+            overflow-wrap: anywhere;
+        }
+        .error { color: #ff9999; }
+        .description { color: #c1cedd; }
+    </style>
+</head>
+<body>
+<main>
+    <h1>Scan. Detect. <span>Protect.</span></h1>
+    <p class="description">CyberMesh — Website Security Scanner</p>
+
+    <section class="panel">
+        <h2>Website Scanner</h2>
+        <form id="scanForm">
+            <input
+                id="websiteUrl"
+                type="url"
+                placeholder="https://example.com"
+                required
+            >
+            <button id="scanButton" type="submit">
+                Start Security Scan
+            </button>
+        </form>
+        <div id="result" aria-live="polite"></div>
+    </section>
+</main>
+
+<script>
+const form = document.getElementById("scanForm");
+const result = document.getElementById("result");
+const button = document.getElementById("scanButton");
+
+form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    let url;
+    try {
+        url = new URL(document.getElementById("websiteUrl").value.trim());
+        if (!["http:", "https:"].includes(url.protocol)) {
+            throw new Error("Use an HTTP or HTTPS URL.");
+        }
+    } catch {
+        result.textContent = "Enter a valid URL, e.g. https://example.com";
+        result.className = "error";
+        return;
+    }
+
+    button.disabled = true;
+    button.textContent = "Scanning...";
+    result.className = "";
+    result.textContent = "Scanning website. Please wait...";
+
+    try {
+        const response = await fetch("http://localhost:3000/api/scan", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ website: url.href })
+        });
+
+        const responseData = await response.json();
+
+        if (!response.ok || responseData.status !== "success") {
+            throw new Error(responseData.message || "Website scan failed.");
+        }
+
+        const data = responseData.data;
+        result.replaceChildren();
+
+        const heading = document.createElement("h2");
+        heading.textContent = "Scan Results";
+        result.appendChild(heading);
+
+        const details = [
+            ["Website", data.website],
+            ["Page Title", data.title || "Not found"],
+            ["HTTPS Enabled", url.protocol === "https:" ? "Yes" : "No"],
+            ["Links Found", (data.links || []).length],
+            ["Scripts Found", (data.scripts || []).length],
+            ["HTTP Status", data.statusCode],
+            ["Scanned At", data.scannedAt]
+        ];
+
+        details.forEach(([label, value]) => {
+            const card = document.createElement("div");
+            card.className = "result-card";
+
+            const title = document.createElement("h3");
+            title.textContent = label;
+
+            const text = document.createElement("p");
+            text.textContent = String(value ?? "N/A");
+
+            card.append(title, text);
+            result.appendChild(card);
+        });
+
+        for (const [label, items] of [
+            ["Links Found", data.links || []],
+            ["Scripts Found", data.scripts || []]
+        ]) {
+            const card = document.createElement("div");
+            card.className = "result-card";
+
+            const title = document.createElement("h3");
+            title.textContent = label;
+            card.appendChild(title);
+
+            const list = document.createElement("ul");
+            if (items.length === 0) {
+                const item = document.createElement("li");
+                item.textContent = "None found";
+                list.appendChild(item);
+            } else {
+                items.forEach(value => {
+                    const item = document.createElement("li");
+                    item.textContent = value;
+                    list.appendChild(item);
+                });
+            }
+
+            card.appendChild(list);
+            result.appendChild(card);
+        }
+
+        const note = document.createElement("p");
+        note.className = "description";
+        note.textContent =
+            "Basic page inspection only; this is not a complete security audit.";
+        result.appendChild(note);
+
+    } catch (error) {
+        result.replaceChildren();
+        const message = document.createElement("p");
+        message.className = "error";
+        message.textContent =
+            error.message === "Failed to fetch"
+            ? "Backend connection failed. Check that node server.js is running."
+            : error.message;
+        result.appendChild(message);
+    } finally {
+        button.disabled = false;
+        button.textContent = "Start Security Scan";
+    }
+});
+</script>
+</body>
+</html>

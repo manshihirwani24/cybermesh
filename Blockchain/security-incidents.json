@@ -1,0 +1,289 @@
+[
+  {
+    "id": "INC-508A631D",
+    "timestamp": "2026-10-10T02:11:23.106Z",
+    "sourceIp": "185.220.101.5",
+    "location": {
+      "country": "Germany",
+      "region": "Brandenburg",
+      "city": "Brandenburg an der Havel",
+      "isp": "Stiftung Erneuerbare Freiheit",
+      "approximate": true
+    },
+    "activityType": "SQL Injection Probe",
+    "riskLevel": "High",
+    "incidentStatus": "Detected",
+    "indicators": [
+      "SQLi: UNION / SELECT extraction syntax detected in parameter"
+    ],
+    "evidence": {
+      "method": "POST",
+      "route": "/api/incidents/simulate",
+      "snippet": "SELECT * FROM users WHERE '1'='1'",
+      "userAgent": "CyberMesh-Demo-Simulator/1.0"
+    },
+    "reportHash": "88fd9e26c4f61ba7e736086fea35e8febc5950ca648f75267c3329364ed7cb19",
+    "blockchain": {
+      "blockIndex": 74,
+      "blockHash": "d36f2f7a01fadab92921bf08512fb923d365ecd0cbeb2714928beb7c74c2c3da",
+      "timestamp": "2026-10-10T02:11:23.106Z",
+      "reportHash": "88fd9e26c4f61ba7e736086fea35e8febc5950ca648f75267c3329364ed7cb19",
+      "status": "confirmed"
+    }
+  },
+  {
+    "id": "INC-48B6F002",
+    "timestamp": "2026-10-10T02:11:23.038Z",
+    "sourceIp": "127.0.0.1",
+    "location": {
+      "country": "Local Network",
+      "region": "RFC 1918 / Loopback",
+      "city": "Localhost",
+      "isp": "Internal Network Interface",
+      "approximate": true
+    },
+    "activityType": "SQL Injection Probe",
+    "riskLevel": "High",
+    "incidentStatus": "Detected",
+    "indicators": [
+      "SQLi: Boolean bypass logic (' OR 1=1)"
+    ],
+    "evidence": {
+      "method": "GET",
+      "route": "/api/sites",
+      "snippet": "/api/sites?target=1' OR 1=1--",
+      "userAgent": "node"
+    },
+    "reportHash": "0a791feef1699338a4001c9f1c42e9c9e1e783a742b8cc1fba128f5c52a93e8f",
+    "blockchain": {
+      "blockIndex": 73,
+      "blockHash": "adaf93b96d38a3288de5ab6541c3a91ecee691228206f00f70482d69a67300bf",
+      "timestamp": "2026-10-10T02:11:23.038Z",
+      "reportHash": "0a791feef1699338a4001c9f1c42e9c9e1e783a742b8cc1fba128f5c52a93e8f",
+      "status": "confirmed"
+    }
+  },
+  {
+    "id": "INC-5A621559",
+    "timestamp": "2026-10-10T02:10:28.844Z",
+    "sourceIp": "198.51.100.42",
+    "location": {
+      "country": "Local Network",
+      "region": "RFC 1918 / Loopback",
+      "city": "Localhost",
+      "isp": "Internal Network Interface",
+      "approximate": true
+    },
+    "activityType": "SQL Injection Probe",
+    "riskLevel": "High",
+    "incidentStatus": "Detected",
+    "indicators": [
+      "SQLi: UNION / SELECT extraction syntax detected in parameter"
+    ],
+    "evidence": {
+      "method": "POST",
+      "route": "/api/incidents/simulate",
+      "snippet": "SELECT * FROM users WHERE '1'='1'",
+      "userAgent": "CyberMesh-Demo-Simulator/1.0"
+    },
+    "reportHash": "c5f57fb90e34a337c3be04a7a5b0882162522565578d0dbaa302bfef6d0a231b",
+    "blockchain": {
+      "blockIndex": 71,
+      "blockHash": "c463cdbeb5c4b58abc79577fda3276d285e54879db9b11861a75d9acb0f7e662",
+      "timestamp": "2026-10-10T02:10:28.844Z",
+      "reportHash": "c5f57fb90e34a337c3be04a7a5b0882162522565578d0dbaa302bfef6d0a231b",
+      "status": "confirmed"
+    }
+  },
+  {
+    "id": "INC-8645A794",
+    "timestamp": "2026-10-10T02:10:28.837Z",
+    "sourceIp": "127.0.0.1",
+    "location": {
+      "country": "Local Network",
+      "region": "RFC 1918 / Loopback",
+      "city": "Localhost",
+      "isp": "Internal Network Interface",
+      "approximate": true
+    },
+    "activityType": "SQL Injection Probe",
+    "riskLevel": "High",
+    "incidentStatus": "Detected",
+    "indicators": [
+      "SQLi: Boolean bypass logic (' OR 1=1)"
+    ],
+    "evidence": {
+      "method": "GET",
+      "route": "/api/scan",
+      "snippet": "/api/scan?target=1' OR 1=1--",
+      "userAgent": "node"
+    },
+    "reportHash": "fb84fbb7c6e26ab825a9f4b7994760b857c637e42fc91153fb64816d37c66da6",
+    "blockchain": {
+      "blockIndex": 70,
+      "blockHash": "3b96cea0dd119f8da6b1254a5a78b1c73bcd3c1e9cd8a021ce3292132888dff8",
+      "timestamp": "2026-10-10T02:10:28.837Z",
+      "reportHash": "fb84fbb7c6e26ab825a9f4b7994760b857c637e42fc91153fb64816d37c66da6",
+      "status": "confirmed"
+    }
+  },
+  {
+    "id": "INC-CEC9A289",
+    "timestamp": "2026-10-10T02:06:21.703Z",
+    "sourceIp": "185.220.101.5",
+    "location": {
+      "country": "Germany",
+      "region": "Brandenburg",
+      "city": "Brandenburg an der Havel",
+      "isp": "Stiftung Erneuerbare Freiheit",
+      "approximate": true
+    },
+    "activityType": "Cross-Site Scripting (XSS)",
+    "riskLevel": "High",
+    "incidentStatus": "Detected",
+    "indicators": [
+      "XSS: Inline <script> tag execution detected"
+    ],
+    "evidence": {
+      "method": "POST",
+      "route": "/api/incidents/simulate",
+      "snippet": "<script>alert('CyberMesh-Test')</script>",
+      "userAgent": "CyberMesh-Demo-Simulator/1.0"
+    },
+    "reportHash": "08dcac942897e00264de8fc04afe44472adda7f881ad43bc65f828b5220c2e77",
+    "blockchain": {
+      "blockIndex": 68,
+      "blockHash": "2adc96b26c003415f67f06683bd125be6304c53921bc5f48ad7e7911e8de5c91",
+      "timestamp": "2026-10-10T02:06:21.704Z",
+      "reportHash": "08dcac942897e00264de8fc04afe44472adda7f881ad43bc65f828b5220c2e77",
+      "status": "confirmed"
+    }
+  },
+  {
+    "id": "INC-9A1F2C3D",
+    "timestamp": "2026-10-10T01:31:20.049Z",
+    "sourceIp": "185.220.101.5",
+    "location": {
+      "country": "Germany",
+      "region": "Hesse",
+      "city": "Frankfurt",
+      "isp": "Tor Exit Relay",
+      "approximate": true
+    },
+    "activityType": "SQL Injection Probe",
+    "riskLevel": "High",
+    "incidentStatus": "Detected",
+    "indicators": [
+      "SQLi: UNION / SELECT extraction syntax",
+      "Boolean bypass attempt in query parameter"
+    ],
+    "evidence": {
+      "method": "GET",
+      "route": "/api/scan?target=1'%20OR%201=1--",
+      "userAgent": "Mozilla/5.0 (compatible; Nmap Scripting Engine)"
+    },
+    "reportHash": "80ad8749013fd982d6a4660da8337387f04bec1eff068b0e9de20b08cc33af55",
+    "blockchain": {
+      "blockIndex": 64,
+      "blockHash": "d5462fd9c543113dcce86e6b1f5f6eba752d380f703c943e677d88c13cbbb2e4",
+      "timestamp": "2026-10-10T02:06:20.050Z",
+      "reportHash": "80ad8749013fd982d6a4660da8337387f04bec1eff068b0e9de20b08cc33af55",
+      "status": "confirmed"
+    }
+  },
+  {
+    "id": "INC-8B2E3D4C",
+    "timestamp": "2026-10-10T00:48:20.050Z",
+    "sourceIp": "103.21.244.2",
+    "location": {
+      "country": "Singapore",
+      "region": "Singapore",
+      "city": "Singapore",
+      "isp": "Cloudflare Network",
+      "approximate": true
+    },
+    "activityType": "Cross-Site Scripting (XSS)",
+    "riskLevel": "High",
+    "incidentStatus": "Detected",
+    "indicators": [
+      "XSS: DOM event handler injection (onerror=alert)",
+      "Script payload in JSON body"
+    ],
+    "evidence": {
+      "method": "POST",
+      "route": "/api/sites",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+    },
+    "reportHash": "4953b580bfe93ed95dfafa228c6061b10ef3d07ed3cf1ba627d5d1c7538c1a60",
+    "blockchain": {
+      "blockIndex": 65,
+      "blockHash": "b0451e8b90a6b2655ef581707012f5aade00cda01dcfe11c3ada0a0221610c59",
+      "timestamp": "2026-10-10T02:06:20.051Z",
+      "reportHash": "4953b580bfe93ed95dfafa228c6061b10ef3d07ed3cf1ba627d5d1c7538c1a60",
+      "status": "confirmed"
+    }
+  },
+  {
+    "id": "INC-7C3D4E5B",
+    "timestamp": "2026-10-10T00:01:20.050Z",
+    "sourceIp": "198.51.100.24",
+    "location": {
+      "country": "United States",
+      "region": "California",
+      "city": "San Jose",
+      "isp": "Test Network Org",
+      "approximate": true
+    },
+    "activityType": "Excessive Requests (Rate Limit)",
+    "riskLevel": "Medium",
+    "incidentStatus": "Detected",
+    "indicators": [
+      "Exceeded 60 req/min defensive threshold",
+      "Rapid scanning against endpoint"
+    ],
+    "evidence": {
+      "method": "GET",
+      "route": "/api/sites",
+      "userAgent": "Python-urllib/3.10"
+    },
+    "reportHash": "791d4a8c99ad046de432a45bb4f061c95f4855df04f26c8dac34d61ac659336e",
+    "blockchain": {
+      "blockIndex": 66,
+      "blockHash": "a3dd699ecac23ada7af66bcf47798e2fd2791903716091adb9ec9e3f5ed159bc",
+      "timestamp": "2026-10-10T02:06:20.051Z",
+      "reportHash": "791d4a8c99ad046de432a45bb4f061c95f4855df04f26c8dac34d61ac659336e",
+      "status": "confirmed"
+    }
+  },
+  {
+    "id": "INC-6D4E5F6A",
+    "timestamp": "2026-10-09T22:56:20.050Z",
+    "sourceIp": "127.0.0.1",
+    "location": {
+      "country": "Local Network",
+      "region": "RFC 1918 / Loopback",
+      "city": "Localhost",
+      "isp": "Internal Network Interface",
+      "approximate": true
+    },
+    "activityType": "Repeated Failed Logins",
+    "riskLevel": "High",
+    "incidentStatus": "Investigating",
+    "indicators": [
+      "4 consecutive invalid authentication attempts within 2 minutes"
+    ],
+    "evidence": {
+      "method": "POST",
+      "route": "/api/auth/login",
+      "userAgent": "curl/8.4.0"
+    },
+    "reportHash": "4f7c4dc44d37e50cf4fcbf8b8d9a2ca94362cde5bf4ac7ead48e7cbb2ce645d6",
+    "blockchain": {
+      "blockIndex": 67,
+      "blockHash": "e36d75e62211d9d89c46a7fe0c427a974472dbfa5e24e51f994e3875f70ccbad",
+      "timestamp": "2026-10-10T02:06:20.051Z",
+      "reportHash": "4f7c4dc44d37e50cf4fcbf8b8d9a2ca94362cde5bf4ac7ead48e7cbb2ce645d6",
+      "status": "confirmed"
+    }
+  }
+]

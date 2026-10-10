@@ -1,0 +1,9 @@
+**/node_modules
+**/dist
+.git
+*.zip
+Blockchain/blockchain.json
+Blockchain/scan-records.json
+Blockchain/scan-history.json
+Blockchain/monitored-sites.json
+Blockchain/local-auth.json
